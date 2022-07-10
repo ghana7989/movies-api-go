@@ -1,0 +1,33 @@
+### GET all the movies
+GET http://localhost:8000/movies
+
+### Get a movie by id
+GET http://localhost:8000/movies/3
+
+### POST create a movie
+POST http://localhost:8000/movies
+
+{
+  "isbn": "448745",
+  "title": "Kanche",
+  "director": {
+    "firstName": "Ido",
+    "lastName": "Coppola"
+  }
+}
+
+### POST update a movie
+PUT  http://localhost:8000/movies/8498081
+
+{
+  "isbn": "448745",
+  "title": "Kanche",
+  "director": {
+    "firstName": "Naku",
+    "lastName": "Telidu"
+  }
+}
+
+### DELETE a movie
+DELETE http://localhost:8000/movies/8498081
+
